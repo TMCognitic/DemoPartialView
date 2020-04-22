@@ -1,0 +1,12 @@
+﻿@using DemoPartialView.Models
+@model Post
+
+<div class="row" id="@("post" + Model.Id)">
+    <div class="col-md-12">
+        <h2>@Model.Title</h2>
+        <p>
+            @Model.Content
+        </p>
+        <footer>@Model.PostDate.ToLongDateString()</footer>
+    </div>
+</div>
